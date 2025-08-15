@@ -1,0 +1,39 @@
+/* Custom CSS para o portfólio de Giovanne Medeiros */
+
+/* Estilos de corpo e fonte */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+/* Estilo da barra de rolagem para um visual mais clean */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+::-webkit-scrollbar-thumb {
+    background: #8b5cf6;
+    border-radius: 4px;
+}
+
+/* Estilo do botão principal */
+.btn-primary {
+    background-color: #8b5cf6;
+    color: #1f2937;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #7c3aed;
+}
+
+/* Efeito de sombra neon roxa ao passar o mouse */
+.project-card:hover {
+    box-shadow: 0 0 25px 5px rgba(139, 92, 246, 0.7);
+}

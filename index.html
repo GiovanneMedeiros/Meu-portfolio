@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanne Medeiros - Portfólio</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <!-- Navegação e Header -->
+    <header class="w-full flex justify-center py-6 px-4 md:px-0 bg-gray-900 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center max-w-7xl">
+            <h1 class="text-2xl font-bold text-white"><a href="#" class="text-purple-400">Giovanne</a></h1>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="#about" class="hover:text-purple-400 transition-colors">Sobre</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 transition-colors">Projetos</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition-colors">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+        <!-- Seção Hero (Introdução) -->
+        <section id="hero" class="h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white">Olá, eu sou <span class="text-purple-400">Giovanne Medeiros</span>.</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl">Desenvolvedor Front-end Júnior apaixonado por criar interfaces de usuário intuitivas e acessíveis.</p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#projects" class="btn-primary">Ver Projetos</a>
+                <a href="#contact" class="bg-gray-800 text-white font-semibold py-4 px-8 rounded-full border-2 border-purple-600 hover:bg-gray-700 transition-colors">Entrar em Contato</a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="about" class="py-20 md:py-28">
+            <h3 class="text-3xl md:text-5xl font-bold text-center text-purple-400 mb-12">Sobre Mim</h3>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="foto minha/perfil.jpg" alt="Foto de Giovanne Medeiros" class="rounded-full shadow-lg border-4 border-purple-600 mx-auto">
+                </div>
+                <div class="md:w-1/2 text-lg leading-relaxed">
+                    <p class="mb-4">
+                        Sou um desenvolvedor front-end júnior com foco em criar experiências digitais que sejam bonitas e funcionais. Meu objetivo é transformar ideias em realidade através de código limpo e otimizado.
+                    </p>
+                    <p class="mb-4">
+                        Tenho experiência com as seguintes tecnologias e ferramentas:
+                    </p>
+                    <ul class="flex flex-wrap gap-4 text-sm md:text-base">
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fab fa-html5 text-orange-500 mr-2"></i>HTML5</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fab fa-css3-alt text-blue-500 mr-2"></i>CSS3</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fab fa-js text-yellow-400 mr-2"></i>JavaScript</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fab fa-react text-cyan-400 mr-2"></i>React</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fas fa-bolt text-gray-400 mr-2"></i>Next.js</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fas fa-wind text-cyan-300 mr-2"></i>Tailwind CSS</li>
+                        <li class="bg-gray-800 py-2 px-4 rounded-full border border-purple-600"><i class="fab fa-github text-white mr-2"></i>Git/GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="py-20 md:py-28">
+            <h3 class="text-3xl md:text-5xl font-bold text-center text-purple-400 mb-12">Meus Projetos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card de Projeto 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 project-card">
+                    <img src="site elisandra.png" alt="Imagem do Projeto 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-white">Landing Page Corretora de Imóveis (em desenvolvivemento)</h4>
+                    <p class="text-gray-400 mb-4">Uma landing page para uma corretora de imóveis de alto padrão, desenvolvida com HTML, CSS e JavaScript. Inclui funcionalidades de contato por e-mail e WhatsApp, além de navegação por categorias através de uma navbar.</p>
+                    <div class="flex flex-wrap gap-2 text-sm text-purple-400 mb-4">
+                        <span>#HTML</span>
+                        <span>#CSS</span>
+                        <span>#JavaScript</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://giovannemedeiros.github.io/Elisandra-Miellis" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://github.com/GiovanneMedeiros/Elisandra-Miellis" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Card de Projeto 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 project-card">
+                    <img src="projeto-2.png" alt="Imagem do Projeto 2" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-white">Pagina de login estilo dark</h4>
+                    <p class="text-gray-400 mb-4">O site é uma tela de login com um tema escuro e minimalista. As tecnologias usadas são HTML para a estrutura da página, Tailwind CSS para o design e estilo responsivo do formulário, e CSS puro para criar o fundo animado com um padrão de linhas em movimento.</p>
+                    <div class="flex flex-wrap gap-2 text-sm text-purple-400 mb-4">
+                        <span>#HTML</span>
+                        <span>#Tailwind CSS</span>
+                        <span>#CSS3</span>
+                        <span>#react</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="#" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Card de Projeto 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 project-card">
+                    <img src="projeto 3.png" alt="Imagem do Projeto 3" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold mb-2 text-white">loja de carros</h4>
+                    <p class="text-gray-400 mb-4">MotorHub é um site de classificados de carros, onde os usuários podem buscar e visualizar veículos. O site é moderno, minimalista e responsivo, usando o Tailwind CSS para o design e JavaScript para a lógica de exibição dos carros. O objetivo principal é proporcionar uma experiência de navegação simples e agradável para quem deseja comprar ou vender um veículo online.</p>
+                    <div class="flex flex-wrap gap-2 text-sm text-purple-400 mb-4">
+                        <span>#HTML5</span>
+                        <span>#CSS3</span>
+                        <span>#JavaScript</span>
+                        <span>#Tailwind CSS</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://giovannemedeiros.github.io/loja-de-carros-MotorHub-/" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://github.com/GiovanneMedeiros/loja-de-carros-MotorHub-" target="_blank" class="text-purple-400 hover:text-purple-600 transition-colors"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="py-20 md:py-28 text-center">
+            <h3 class="text-3xl md:text-5xl font-bold text-purple-400 mb-8">Entre em Contato</h3>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para me enviar uma mensagem ou me seguir nas redes sociais.
+            </p>
+            <div class="flex justify-center space-x-6 text-4xl">
+                <a href="mailto:giovannemedeiros22@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/GiovanneMedeiros" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/giovanne-medeiros" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 border-t border-gray-800 mt-12">
+        <p>&copy; 2024 Giovanne Medeiros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
