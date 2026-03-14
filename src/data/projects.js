@@ -49,15 +49,15 @@ export const projects = [
     category: "frontend",
   },
   {
-    title: "Sistema de Login Node.js",
+    title: "Sistema de Login",
     description:
       "Projeto de autenticacao com estrutura de rotas protegidas e fluxo de login para aprendizado de back-end.",
-    technologies: ["Node.js", "Express", "JavaScript"],
+    technologies: ["CSS", "HTML", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80",
     alt: "Projeto de login com Node.js",
-    demoLink: "",
-    githubLink: "",
+    demoLink: "https://giovannemedeiros.github.io/Pagina-de-login-estilo-dark/",
+    githubLink: "https://github.com/GiovanneMedeiros/Pagina-de-login-estilo-dark",
     category: "backend",
   },
 ];
