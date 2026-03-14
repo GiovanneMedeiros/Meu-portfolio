@@ -5,7 +5,7 @@ export const projects = [
       "Aplicacao web desenvolvida em React que permite converter arquivos diretamente pelo navegador utilizando uma API de conversao. O projeto demonstra integracao entre frontend e backend, consumo de APIs REST e interface responsiva.",
     technologies: ["React", "JavaScript", "HTML5", "CSS3", "REST API"],
     image:
-      "/assets/projects/File Converter Web.png",
+      "/assets/projects/file-converter-web.png",
     alt: "Interface web de conversao de arquivos",
     demoLink: "https://file-conversion-api.vercel.app",
     githubLink: "",
