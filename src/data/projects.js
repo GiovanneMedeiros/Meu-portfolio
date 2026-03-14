@@ -1,11 +1,13 @@
+import fileConverterWebImage from "../../assets/projects/file-converter-web.png";
+import motorHubHomeImage from "../../assets/projects/motorhub-home-thumb.png";
+
 export const projects = [
   {
     title: "File Converter Web",
     description:
       "Aplicacao web desenvolvida em React que permite converter arquivos diretamente pelo navegador utilizando uma API de conversao. O projeto demonstra integracao entre frontend e backend, consumo de APIs REST e interface responsiva.",
     technologies: ["React", "JavaScript", "HTML5", "CSS3", "REST API"],
-    image:
-      "/assets/projects/file-converter-web.png",
+    image: fileConverterWebImage,
     alt: "Interface web de conversao de arquivos",
     demoLink: "https://file-conversion-api.vercel.app",
     githubLink: "https://github.com/GiovanneMedeiros/file-conversion-api",
@@ -40,7 +42,7 @@ export const projects = [
     description:
       "Plataforma para vitrine de carros premium com filtros de veiculos, pagina de detalhes e CTA para contato.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/assets/projects/motorhub-home-thumb.png",
+    image: motorHubHomeImage,
     fallbackImage:
       "https://giovannemedeiros.github.io/loja-de-carros-MotorHub-/Mercedes%20Benz%20AMG%20G63.jpg",
     alt: "Projeto MotorHub com cards de carros",
