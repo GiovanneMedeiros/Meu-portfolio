@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Giovanne Medeiros" />
+  <meta
+    name="keywords"
+    content="Giovanne Medeiros, portfolio frontend, portfolio full stack, estagio desenvolvedor, JavaScript, React, HTML, CSS"
+  />
   <meta
     name="description"
-    content="Portfólio profissional de Giovanne Medeiros, estudante de Ciência da Computação focado em desenvolvimento web moderno."
+    content="Portfólio profissional de Giovanne Medeiros, estudante de Ciência da Computação em busca de estágio Front-End ou Full Stack."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Giovanne Medeiros | Portfólio" />
+  <meta
+    property="og:description"
+    content="Projetos, tecnologias e contato de Giovanne Medeiros para oportunidades de estágio em desenvolvimento web."
+  />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Giovanne Medeiros | Portfólio" />
+  <meta
+    name="twitter:description"
+    content="Estudante de Ciência da Computação com foco em desenvolvimento web, JavaScript e React."
   />
   <title>Giovanne Medeiros | Portfólio</title>
 
@@ -17,164 +36,9 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-blur bg-blur-1" aria-hidden="true"></div>
-  <div class="bg-blur bg-blur-2" aria-hidden="true"></div>
-
-  <header class="header" id="topo">
-    <nav class="navbar container" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="Ir para o início">GM.</a>
-
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="menu" id="menu-lista">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section" id="inicio">
-      <div class="container hero-content reveal">
-        <p class="hero-tag">Portfólio de Desenvolvedor Web</p>
-        <h1>Giovanne Medeiros</h1>
-        <h2>
-          <span id="typed-text" aria-live="polite"></span>
-          <span class="cursor" aria-hidden="true">|</span>
-        </h2>
-        <p class="hero-description">
-          Estudante de Ciência da Computação no 6º semestre focado em desenvolvimento web moderno.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projetos">Ver Projetos</a>
-          <a class="btn btn-ghost" href="https://github.com/giovannemedeiros" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/giovanne-medeiros/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sobre">
-      <div class="container reveal">
-        <p class="section-label">Sobre Mim</p>
-        <h3 class="section-title">Construindo experiências digitais modernas</h3>
-        <p class="section-text">
-          Sou estudante de Ciência da Computação no 6º semestre e apaixonado por tecnologia e desenvolvimento web. Tenho experiência com HTML, CSS e JavaScript e estou evoluindo para me tornar um desenvolvedor Full Stack, estudando também Node.js e Python. Busco uma oportunidade de estágio para aplicar meus conhecimentos em projetos reais e continuar evoluindo como desenvolvedor.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container reveal">
-        <p class="section-label">Skills</p>
-        <h3 class="section-title">Stack em evolução constante</h3>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h4>Front-end</h4>
-            <ul>
-              <li>🌐 HTML</li>
-              <li>🎨 CSS</li>
-              <li>⚡ JavaScript</li>
-              <li>⚛ React</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h4>Back-end</h4>
-            <ul>
-              <li>🟩 Node.js</li>
-              <li>🚀 Express</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h4>Ferramentas</h4>
-            <ul>
-              <li>🔧 Git</li>
-              <li>🐙 GitHub</li>
-              <li>💻 VSCode</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projetos">
-      <div class="container reveal">
-        <p class="section-label">Projetos</p>
-        <h3 class="section-title">Trabalhos que representam minha evolução</h3>
-        <p class="section-text projects-intro">
-          Selecione uma categoria para explorar os projetos com mais contexto técnico.
-        </p>
-
-        <div class="project-filters" role="tablist" aria-label="Filtro de projetos">
-          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
-          <button class="filter-btn" type="button" data-filter="frontend">Front-end</button>
-          <button class="filter-btn" type="button" data-filter="backend">Back-end</button>
-          <button class="filter-btn" type="button" data-filter="api">APIs</button>
-        </div>
-
-        <div class="projects-grid" id="projects-grid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="github-stats">
-      <div class="container reveal">
-        <p class="section-label">GitHub Stats</p>
-        <h3 class="section-title">Consistência de contribuição</h3>
-        <div class="stats-grid">
-          <!-- Troque o username abaixo pelo seu usuário real do GitHub -->
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=giovannemedeiros&show_icons=true&theme=tokyonight&hide_border=true"
-            alt="Estatísticas do GitHub"
-          />
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=giovannemedeiros&layout=compact&theme=tokyonight&hide_border=true"
-            alt="Linguagens mais usadas no GitHub"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contato">
-      <div class="container reveal">
-        <p class="section-label">Contato</p>
-        <h3 class="section-title">Vamos conversar sobre oportunidades</h3>
-
-        <div class="contact-card">
-          <p><strong>Email:</strong> <a href="mailto:giovannemedeiros22@gmail.com">giovannemedeiros22@gmail.com</a></p>
-          <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/giovannemedeiros" target="_blank" rel="noopener noreferrer">github.com/giovannemedeiros</a>
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/giovanne-medeiros/" target="_blank" rel="noopener noreferrer">linkedin.com/in/giovanne-medeiros</a>
-          </p>
-          <a class="btn btn-primary" href="mailto:giovannemedeiros22@gmail.com?subject=Contato%20sobre%20oportunidade&body=Ol%C3%A1%20Giovanne%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.">Entrar em Contato</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Giovanne Medeiros. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
