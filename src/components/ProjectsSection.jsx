@@ -10,7 +10,10 @@ export default function ProjectsSection() {
       return projects;
     }
 
-    return projects.filter((project) => project.category === filter);
+    return projects.filter((project) => {
+      const categories = Array.isArray(project.category) ? project.category : [project.category];
+      return categories.includes(filter);
+    });
   }, [filter]);
 
   return (
@@ -51,6 +54,7 @@ export default function ProjectsSection() {
               alt={project.alt}
               category={project.category}
               fallbackImage={project.fallbackImage}
+              inDevelopment={project.inDevelopment}
             />
           ))}
         </div>

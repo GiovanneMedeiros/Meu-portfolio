@@ -6,6 +6,9 @@ function formatCategory(category) {
     backend: "Back-end",
     api: "API",
   };
+  if (Array.isArray(category)) {
+    return category.map(cat => labels[cat] || cat).join(" • ");
+  }
   return labels[category] || category;
 }
 
@@ -19,6 +22,7 @@ export default function ProjectCard({
   alt,
   category,
   fallbackImage,
+  inDevelopment,
 }) {
   const [style, setStyle] = useState(undefined);
 
@@ -61,6 +65,7 @@ export default function ProjectCard({
       <div className="project-content">
         <div className="project-meta">
           <span className="project-badge">{formatCategory(category)}</span>
+          {inDevelopment && <span className="project-badge" style={{backgroundColor: "#ff9500"}}>Em Desenvolvimento</span>}
         </div>
         <h4>{title}</h4>
         <p>{description}</p>

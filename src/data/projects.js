@@ -1,5 +1,6 @@
 import fileConverterWebImage from "../../assets/projects/file-converter-web.png";
 import motorHubHomeImage from "../../assets/projects/motorhub-home-thumb.png";
+import smartlocationImage from "../../assets/projects/smartlocation.png";
 
 export const projects = [
   {
@@ -61,5 +62,17 @@ export const projects = [
     demoLink: "https://giovannemedeiros.github.io/Pagina-de-login-estilo-dark/",
     githubLink: "https://github.com/GiovanneMedeiros/Pagina-de-login-estilo-dark",
     category: "backend",
+  },
+  {
+    title: "Smartlocation",
+    description:
+      "Aplicação web de geomarketing com mapa interativo e painel de análise regional para identificar oportunidades comerciais com base em fluxo de pessoas, concorrência, acessibilidade e custo estimado.",
+    technologies: ["React", "JavaScript", "Leaflet", "Node.js", "Express", "Vite"],
+    image: smartlocationImage,
+    alt: "Aplicação Smartlocation com mapa interativo de geomarketing",
+    demoLink: "",
+    githubLink: "https://github.com/GiovanneMedeiros/smartlocation",
+    category: ["frontend", "backend"],
+    inDevelopment: true,
   },
 ];
