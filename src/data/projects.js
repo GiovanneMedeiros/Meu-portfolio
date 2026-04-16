@@ -1,8 +1,21 @@
 import fileConverterWebImage from "../../assets/projects/file-converter-web.png";
+import financeTrackImage from "../../assets/projects/FinanceTrack.png";
 import motorHubHomeImage from "../../assets/projects/motorhub-home-thumb.png";
+import loyaltyProgramArarasAcaiImage from "../../assets/projects/Programa de fidelidade Arara's açaí.png";
 import smartlocationImage from "../../assets/projects/smartlocation.png";
 
 export const projects = [
+  {
+    title: "FinanceTrack",
+    description:
+      "Dashboard financeiro desenvolvido com React e Tailwind CSS, com foco em experiencia do usuario, importacao de fatura, controle de saldo e interface moderna no estilo fintech.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion", "LocalStorage"],
+    image: financeTrackImage,
+    alt: "Dashboard do FinanceTrack com visao financeira moderna",
+    demoLink: "https://finance-track-kappa.vercel.app/",
+    githubLink: "https://github.com/GiovanneMedeiros/finance-track/tree/main",
+    category: "frontend",
+  },
   {
     title: "File Converter Web",
     description:
@@ -25,6 +38,17 @@ export const projects = [
     demoLink: "",
     githubLink: "https://github.com/GiovanneMedeiros/file-conversion-api",
     category: "api",
+  },
+  {
+    title: "Sistema de Fidelidade Arara's Açaí",
+    description:
+      "Sistema de fidelidade com painel administrativo para gestao de clientes, pontos, recompensas e acompanhamento de resgates em uma interface focada em operacao e leitura rapida de metricas.",
+    technologies: ["React", "JavaScript", "Vite", "CSS", "Dashboard UI"],
+    image: loyaltyProgramArarasAcaiImage,
+    alt: "Dashboard do Sistema de Fidelidade Arara's Açaí",
+    demoLink: "https://araras-acai.vercel.app/login",
+    githubLink: "https://github.com/GiovanneMedeiros/Araras-acai",
+    category: ["frontend", "backend"],
   },
   {
     title: "Elisandra Miellis | Imoveis de Alto Padrao",
