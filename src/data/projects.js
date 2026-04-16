@@ -1,5 +1,7 @@
 import fileConverterWebImage from "../../assets/projects/file-converter-web.png";
 import motorHubHomeImage from "../../assets/projects/motorhub-home-thumb.png";
+import ararasAcaiImage from "../../assets/projects/araras acai.png";
+import financeTrackImage from "../../assets/projects/finance track.png";
 import smartlocationImage from "../../assets/projects/smartlocation.png";
 
 export const projects = [
@@ -72,6 +74,29 @@ export const projects = [
     alt: "Aplicação Smartlocation com mapa interativo de geomarketing",
     demoLink: "",
     githubLink: "https://github.com/GiovanneMedeiros/smartlocation",
+    category: ["frontend", "backend"],
+    inDevelopment: true,
+  },
+  {
+    title: "Sistema de Fidelidade Arara's Açaí",
+    description:
+      "Plataforma de fidelidade para gestão de clientes, pontos e recompensas, com autenticação e painel administrativo completo.",
+    technologies: ["JavaScript (ES6+)", "React", "HTML5", "CSS3", "Supabase", "REST API", "PostgreSQL"],
+    image: ararasAcaiImage,
+    alt: "Painel do sistema de fidelidade Arara's Açaí",
+    demoLink: "https://araras-acai.vercel.app/login",
+    githubLink: "https://github.com/GiovanneMedeiros/Araras-acai",
+    category: ["frontend", "backend"],
+  },
+  {
+    title: "FinanceTrack",
+    description:
+      "Aplicação web de controle financeiro pessoal com dashboard interativo, autenticação segura e sistema de planos FREE e PREMIUM para gerenciar receitas, despesas e acompanhar a saúde financeira.",
+    technologies: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Supabase", "PostgreSQL", "HTML", "CSS"],
+    image: financeTrackImage,
+    alt: "Dashboard do FinanceTrack com controle financeiro pessoal",
+    demoLink: "https://finance-track-kappa.vercel.app/",
+    githubLink: "https://github.com/GiovanneMedeiros/finance-track",
     category: ["frontend", "backend"],
     inDevelopment: true,
   },
