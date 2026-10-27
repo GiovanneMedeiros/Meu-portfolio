@@ -18,7 +18,7 @@ export default function Technologies() {
     <section className="section" id="tecnologias">
       <div className="container reveal">
         <p className="section-label">Tecnologias</p>
-        <h3 className="section-title">Stack principal e aprendizado continuo</h3>
+        <h3 className="section-title">Stack principal e aprendizado contínuo</h3>
 
         <div className="skills-grid">
           {groups.map((group) => (

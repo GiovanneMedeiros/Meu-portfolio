@@ -2,6 +2,13 @@ import { useMemo, useState } from "react";
 import { projects } from "../data/projects.js";
 import ProjectCard from "./ProjectCard.jsx";
 
+const FILTERS = [
+  { value: "todos", label: "Todos" },
+  { value: "frontend", label: "Front-end" },
+  { value: "backend", label: "Back-end" },
+  { value: "api", label: "APIs" },
+];
+
 export default function ProjectsSection() {
   const [filter, setFilter] = useState("todos");
 
@@ -20,25 +27,24 @@ export default function ProjectsSection() {
     <section className="section" id="projetos">
       <div className="container reveal">
         <p className="section-label">Projetos</p>
-        <h3 className="section-title">Projetos com foco em interface e experiencia</h3>
+        <h3 className="section-title">Projetos com foco em interface e experiência</h3>
         <p className="section-text projects-intro">
-          Cada projeto destaca aplicacao pratica de layout responsivo,
-          organizacao de codigo e evolucao continua em desenvolvimento web.
+          Cada projeto destaca aplicação prática de layout responsivo,
+          organização de código e evolução contínua em desenvolvimento web.
         </p>
 
-        <div className="project-filters" role="tablist" aria-label="Filtro de projetos">
-          <button className={`filter-btn ${filter === "todos" ? "active" : ""}`} type="button" onClick={() => setFilter("todos")}>
-            Todos
-          </button>
-          <button className={`filter-btn ${filter === "frontend" ? "active" : ""}`} type="button" onClick={() => setFilter("frontend")}>
-            Front-end
-          </button>
-          <button className={`filter-btn ${filter === "backend" ? "active" : ""}`} type="button" onClick={() => setFilter("backend")}>
-            Back-end
-          </button>
-          <button className={`filter-btn ${filter === "api" ? "active" : ""}`} type="button" onClick={() => setFilter("api")}>
-            APIs
-          </button>
+        <div className="project-filters" role="group" aria-label="Filtro de projetos">
+          {FILTERS.map(({ value, label }) => (
+            <button
+              key={value}
+              className={`filter-btn ${filter === value ? "active" : ""}`}
+              type="button"
+              aria-pressed={filter === value}
+              onClick={() => setFilter(value)}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         <div className="projects-grid" id="projects-grid">

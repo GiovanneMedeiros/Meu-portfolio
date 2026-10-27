@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const ROLES = [
-  "Estagiario Front-End",
-  "Desenvolvedor Web em Formacao",
+  "Estagiário Front-End",
+  "Desenvolvedor Web em Formação",
   "Futuro Full Stack Developer",
 ];
 

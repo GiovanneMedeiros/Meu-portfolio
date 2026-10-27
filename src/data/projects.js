@@ -3,15 +3,16 @@ import motorHubHomeImage from "../../assets/projects/motorhub-home-thumb.png";
 import ararasAcaiImage from "../../assets/projects/araras acai.png";
 import financeTrackImage from "../../assets/projects/finance track.png";
 import smartlocationImage from "../../assets/projects/smartlocation.png";
+import elisandraImage from "../../assets/projects/site-elisandra.png";
 
 export const projects = [
   {
     title: "File Converter Web",
     description:
-      "Aplicacao web desenvolvida em React que permite converter arquivos diretamente pelo navegador utilizando uma API de conversao. O projeto demonstra integracao entre frontend e backend, consumo de APIs REST e interface responsiva.",
+      "Aplicação web desenvolvida em React que permite converter arquivos diretamente pelo navegador utilizando uma API de conversão. O projeto demonstra integração entre frontend e backend, consumo de APIs REST e interface responsiva.",
     technologies: ["React", "JavaScript", "HTML5", "CSS3", "REST API"],
     image: fileConverterWebImage,
-    alt: "Interface web de conversao de arquivos",
+    alt: "Interface web de conversão de arquivos",
     demoLink: "https://file-conversion-api.vercel.app",
     githubLink: "https://github.com/GiovanneMedeiros/file-conversion-api",
     category: "frontend",
@@ -19,23 +20,22 @@ export const projects = [
   {
     title: "File Conversion API",
     description:
-      "API desenvolvida para realizar conversao de arquivos entre diferentes formatos. O projeto utiliza arquitetura modular, filas assincronas com Redis e processamento em background para lidar com tarefas de conversao de forma eficiente.",
+      "API desenvolvida para realizar conversão de arquivos entre diferentes formatos. O projeto utiliza arquitetura modular, filas assíncronas com Redis e processamento em background para lidar com tarefas de conversão de forma eficiente.",
     technologies: ["Node.js", "Express", "Redis", "JavaScript", "REST API"],
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
-    alt: "Codigo de API de conversao de arquivos",
+    alt: "Código de API de conversão de arquivos",
     demoLink: "",
     githubLink: "https://github.com/GiovanneMedeiros/file-conversion-api",
     category: "api",
   },
   {
-    title: "Elisandra Miellis | Imoveis de Alto Padrao",
+    title: "Elisandra Miellis | Imóveis de Alto Padrão",
     description:
-      "Landing page para corretora de imoveis de medio e alto padrao, com foco em conversao e navegacao clara.",
+      "Landing page para corretora de imóveis de médio e alto padrão, com foco em conversão e navegação clara.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image:
-      "https://wallpapers.com/images/featured-full/casa-moderna-vvnk7t1eu7sj0q4w.jpg",
-    alt: "Landing page imobiliaria de alto padrao",
+    image: elisandraImage,
+    alt: "Landing page imobiliária de alto padrão",
     demoLink: "https://giovannemedeiros.github.io/Elisandra-Miellis/",
     githubLink: "https://github.com/giovannemedeiros/Elisandra-Miellis",
     category: "frontend",
@@ -43,7 +43,7 @@ export const projects = [
   {
     title: "MotorHub | Loja de Carros Premium",
     description:
-      "Plataforma para vitrine de carros premium com filtros de veiculos, pagina de detalhes e CTA para contato.",
+      "Plataforma para vitrine de carros premium com filtros de veículos, página de detalhes e CTA para contato.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: motorHubHomeImage,
     fallbackImage:
@@ -54,16 +54,16 @@ export const projects = [
     category: "frontend",
   },
   {
-    title: "Sistema de Login",
+    title: "Página de Login",
     description:
-      "Projeto de autenticacao com estrutura de rotas protegidas e fluxo de login para aprendizado de back-end.",
-    technologies: ["CSS", "HTML", "JavaScript"],
+      "Tela de login com visual dark e layout responsivo, construída com HTML, CSS e JavaScript puro.",
+    technologies: ["HTML", "CSS", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80",
-    alt: "Projeto de login com Node.js",
+    alt: "Página de login com estilo dark",
     demoLink: "https://giovannemedeiros.github.io/Pagina-de-login-estilo-dark/",
     githubLink: "https://github.com/GiovanneMedeiros/Pagina-de-login-estilo-dark",
-    category: "backend",
+    category: "frontend",
   },
   {
     title: "Smartlocation",

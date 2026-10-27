@@ -46,7 +46,8 @@ export default function App() {
           }
         });
       },
-      { threshold: 0.18 }
+      // threshold 0: blocos mais altos que a tela (ex.: projetos no mobile) nunca atingiriam uma porcentagem mínima visível
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
 
     revealElements.forEach((element, index) => {
