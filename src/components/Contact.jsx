@@ -3,11 +3,11 @@ export default function Contact() {
     <section className="section" id="contato">
       <div className="container reveal">
         <p className="section-label">Contato</p>
-        <h3 className="section-title">Disponivel para oportunidades de estagio</h3>
+        <h3 className="section-title">Disponível para oportunidades de estágio</h3>
 
         <div className="contact-card">
           <p>
-            Se voce busca um estagiario com base solida em front-end, disciplina
+            Se você busca um estagiário com base sólida em front-end, disciplina
             de estudos e vontade de evoluir rapidamente, vamos conversar.
           </p>
           <div className="contact-actions">

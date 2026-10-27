@@ -1,8 +1,8 @@
 export default function Header({ menuOpen, onToggleMenu, onCloseMenu, isScrolled }) {
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`} id="topo">
-      <nav className="navbar container" aria-label="Navegacao principal">
-        <a className="brand" href="#inicio" aria-label="Ir para o inicio">
+      <nav className="navbar container" aria-label="Navegação principal">
+        <a className="brand" href="#inicio" aria-label="Ir para o início">
           GM.
         </a>
 
@@ -21,7 +21,7 @@ export default function Header({ menuOpen, onToggleMenu, onCloseMenu, isScrolled
         <ul className={`menu ${menuOpen ? "open" : ""}`} id="menu-lista">
           <li>
             <a href="#inicio" onClick={onCloseMenu}>
-              Inicio
+              Início
             </a>
           </li>
           <li>

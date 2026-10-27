@@ -2,16 +2,17 @@ export default function Hero({ typedText }) {
   return (
     <section className="hero section" id="inicio">
       <div className="container hero-content reveal">
-        <p className="hero-tag">Portfolio para Estagio em Desenvolvimento</p>
+        <p className="hero-tag">Portfólio para Estágio em Desenvolvimento</p>
         <h1>Giovanne Medeiros</h1>
         <h2>
-          <span aria-live="polite">{typedText}</span>
+          <span className="sr-only">Estagiário Front-End e desenvolvedor web em formação</span>
+          <span aria-hidden="true">{typedText}</span>
           <span className="cursor" aria-hidden="true">
             |
           </span>
         </h2>
         <p className="hero-description">
-          Estudante de Bacharelado em Ciencia da Computacao (6o semestre), focado
+          Estudante de Bacharelado em Ciência da Computação (6º semestre), focado
           em desenvolvimento web com JavaScript, HTML, CSS e React.
         </p>
 

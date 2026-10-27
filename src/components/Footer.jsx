@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <p>
-          © {new Date().getFullYear()} Giovanne Medeiros | Portfolio para Estagio
+          © {new Date().getFullYear()} Giovanne Medeiros | Portfólio para Estágio
           em Desenvolvimento
         </p>
       </div>
