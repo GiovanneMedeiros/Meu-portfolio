@@ -2,10 +2,15 @@ export default function Contact() {
   return (
     <section className="section" id="contato">
       <div className="container reveal">
-        <p className="section-label">Contato</p>
+        <p className="section-label">
+          <span className="mono">04.</span> Contato
+        </p>
         <h3 className="section-title">Disponível para oportunidades de estágio</h3>
 
         <div className="contact-card">
+          <p className="contact-cmd mono" aria-hidden="true">
+            <span className="t-prompt">$</span> ./vamos-conversar.sh
+          </p>
           <p>
             Se você busca um estagiário com base sólida em front-end, disciplina
             de estudos e vontade de evoluir rapidamente, vamos conversar.
