@@ -22,9 +22,9 @@ export default function About() {
             Computação (6º semestre), com foco em desenvolvimento web. Tenho
             experiência prática com JavaScript, HTML, CSS e React, além de
             rotina de versionamento com Git e GitHub. Estou em constante
-            evolução, estudando Python e Node.js, e busco uma oportunidade de
-            estágio para contribuir com times de desenvolvimento e acelerar meu
-            crescimento técnico.
+            evolução como desenvolvedor júnior, estudando Python e Node.js e
+            buscando contribuir com times de desenvolvimento enquanto amplio
+            minhas habilidades técnicas.
           </p>
 
           <ul className="stats">

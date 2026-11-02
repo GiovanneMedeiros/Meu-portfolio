@@ -5,15 +5,16 @@ export default function Contact() {
         <p className="section-label">
           <span className="mono">04.</span> Contato
         </p>
-        <h3 className="section-title">Disponível para oportunidades de estágio</h3>
+        <h3 className="section-title">Disponível para oportunidades como desenvolvedor júnior</h3>
 
         <div className="contact-card">
           <p className="contact-cmd mono" aria-hidden="true">
             <span className="t-prompt">$</span> ./vamos-conversar.sh
           </p>
           <p>
-            Se você busca um estagiário com base sólida em front-end, disciplina
-            de estudos e vontade de evoluir rapidamente, vamos conversar.
+            Sou desenvolvedor júnior com base sólida em front-end, disciplina
+            e vontade de evoluir. Se você procura alguém para somar ao time,
+            vamos conversar.
           </p>
           <div className="contact-actions">
             <a
