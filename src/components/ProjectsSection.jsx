@@ -26,7 +26,9 @@ export default function ProjectsSection() {
   return (
     <section className="section" id="projetos">
       <div className="container reveal">
-        <p className="section-label">Projetos</p>
+        <p className="section-label">
+          <span className="mono">03.</span> Projetos
+        </p>
         <h3 className="section-title">Projetos com foco em interface e experiência</h3>
         <p className="section-text projects-intro">
           Cada projeto destaca aplicação prática de layout responsivo,
@@ -48,9 +50,10 @@ export default function ProjectsSection() {
         </div>
 
         <div className="projects-grid" id="projects-grid">
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project, index) => (
             <ProjectCard
               key={project.title}
+              index={index}
               title={project.title}
               description={project.description}
               technologies={project.technologies}

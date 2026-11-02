@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 
 function formatCategory(category) {
   const labels = {
@@ -13,6 +13,7 @@ function formatCategory(category) {
 }
 
 export default function ProjectCard({
+  index,
   title,
   description,
   technologies,
@@ -24,52 +25,65 @@ export default function ProjectCard({
   fallbackImage,
   inDevelopment,
 }) {
-  const [style, setStyle] = useState(undefined);
+  const cardRef = useRef(null);
 
   const hasDemo = Boolean(demoLink && demoLink.trim());
   const hasGithub = Boolean(githubLink && githubLink.trim());
 
   function handleMouseMove(event) {
-    const rect = event.currentTarget.getBoundingClientRect();
+    const card = cardRef.current;
+    const rect = card.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    const rotateY = (x / rect.width - 0.5) * 6;
-    const rotateX = (y / rect.height - 0.5) * -6;
-    setStyle({
-      transform: `translateY(-8px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`,
-    });
+    const rotateY = (x / rect.width - 0.5) * 8;
+    const rotateX = (y / rect.height - 0.5) * -8;
+    card.style.setProperty("--mx", `${x}px`);
+    card.style.setProperty("--my", `${y}px`);
+    card.style.setProperty("--rx", `${rotateX.toFixed(2)}deg`);
+    card.style.setProperty("--ry", `${rotateY.toFixed(2)}deg`);
   }
 
   function handleMouseLeave() {
-    setStyle(undefined);
+    const card = cardRef.current;
+    card.style.setProperty("--rx", "0deg");
+    card.style.setProperty("--ry", "0deg");
   }
 
   return (
     <article
       className="project-card"
-      style={style}
+      ref={cardRef}
+      style={{ "--delay": `${Math.min(index, 8) * 70}ms` }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <img
-        className="project-image"
-        src={image}
-        alt={alt}
-        onError={(event) => {
-          if (fallbackImage) {
-            event.currentTarget.onerror = null;
-            event.currentTarget.src = fallbackImage;
-          }
-        }}
-      />
+      <div className="project-media">
+        <img
+          className="project-image"
+          src={image}
+          alt={alt}
+          loading="lazy"
+          onError={(event) => {
+            if (fallbackImage) {
+              event.currentTarget.onerror = null;
+              event.currentTarget.src = fallbackImage;
+            }
+          }}
+        />
+        <span className="project-index mono" aria-hidden="true">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+      </div>
       <div className="project-content">
         <div className="project-meta">
           <span className="project-badge">{formatCategory(category)}</span>
-          {inDevelopment && <span className="project-badge" style={{backgroundColor: "#ff9500"}}>Em Desenvolvimento</span>}
+          {inDevelopment && (
+            <span className="project-badge project-badge-wip">Em Desenvolvimento</span>
+          )}
         </div>
         <h4>{title}</h4>
         <p>{description}</p>
-        <p className="project-tech">{technologies.join(" • ")}</p>
+        <p className="project-tech mono">{technologies.join(" • ")}</p>
 
         <div className="project-actions">
           {hasGithub ? (
