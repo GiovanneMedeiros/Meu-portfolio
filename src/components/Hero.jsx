@@ -22,7 +22,7 @@ export default function Hero({ typedText }) {
         <div className="hero-content">
           <p className="hero-status">
             <span className="status-dot" aria-hidden="true"></span>
-            Disponível para estágio
+            Disponível para oportunidades júnior
           </p>
 
           <p className="hero-hello">
@@ -34,7 +34,7 @@ export default function Hero({ typedText }) {
           </h1>
 
           <h2>
-            <span className="sr-only">Estagiário Front-End e desenvolvedor web em formação</span>
+            <span className="sr-only">Desenvolvedor Front-End Júnior</span>
             <span className="mono prompt" aria-hidden="true">
               ~/dev $
             </span>{" "}
@@ -101,7 +101,7 @@ export default function Hero({ typedText }) {
                   {"  "}cafe: <span className="t-num">Infinity</span>,
                 </span>
                 <span className="line" style={{ "--i": 6 }}>
-                  {"  "}abertoParaEstagio: <span className="t-bool">true</span>,
+                  {"  "}abertoParaOportunidades: <span className="t-bool">true</span>,
                 </span>
                 <span className="line" style={{ "--i": 7 }}>
                   {"}"};

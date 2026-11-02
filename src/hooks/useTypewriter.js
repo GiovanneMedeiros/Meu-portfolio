@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const ROLES = [
-  "Estagiário Front-End",
-  "Desenvolvedor Web em Formação",
-  "Futuro Full Stack Developer",
+  "Desenvolvedor Front-End Júnior",
+  "Desenvolvedor Web Júnior",
+  "Desenvolvedor JavaScript Júnior",
 ];
 
 export function useTypewriter() {
