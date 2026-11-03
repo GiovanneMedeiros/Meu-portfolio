@@ -1,0 +1,86 @@
+/* ---------- crachá de desenvolvedor (física em DeveloperBadge.jsx) ---------- */
+
+.dev-badge {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1200;
+  pointer-events: none; /* só o cartão recebe cliques/arrasto */
+  overflow: hidden;
+  --s: 1;
+}
+
+.dev-badge-strap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.45));
+}
+
+.dev-badge-edge {
+  stroke: rgba(20, 0, 40, 0.55);
+  stroke-width: 1.2;
+}
+
+.dev-badge-stitch {
+  stroke: rgba(255, 255, 255, 0.16);
+  stroke-width: 1;
+  stroke-dasharray: 5 6;
+}
+
+.dev-badge-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  will-change: transform;
+}
+
+.dev-badge-card,
+.dev-badge-clip {
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.dev-badge-card {
+  pointer-events: auto;
+  cursor: grab;
+  touch-action: none; /* arrastar com o dedo não rola a página */
+  filter: drop-shadow(0 22px 22px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 18px rgba(139, 92, 246, 0.22));
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dev-badge-card.is-dragging {
+  cursor: grabbing;
+}
+
+.dev-badge-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+}
+
+.dev-badge-sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  background: linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, 0.13) 50%, transparent 62%) 50% 0 / 260% 100%;
+  mix-blend-mode: screen;
+}
+
+.dev-badge-clip {
+  pointer-events: none;
+  /* topo esmaece sobre o cordão desenhado, sem emenda visível */
+  /* corta as abas escuras do topo: sobra só a faixa clara, que continua o cordão desenhado */
+  clip-path: polygon(27% 0, 73% 0, 73% 40%, 100% 40%, 100% 100%, 0 100%, 0 40%, 27% 40%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 8%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 8%);
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.5));
+}
