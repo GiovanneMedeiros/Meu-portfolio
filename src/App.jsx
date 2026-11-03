@@ -8,6 +8,7 @@ import ProjectsSection from "./components/ProjectsSection.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import DotMatrix from "./components/DotMatrix.jsx";
+import DeveloperBadge from "./components/DeveloperBadge.jsx";
 import { useTypewriter } from "./hooks/useTypewriter.js";
 
 const SECTION_IDS = ["inicio", "sobre", "tecnologias", "projetos", "contato"];
@@ -85,6 +86,7 @@ export default function App() {
     <>
       <div className="scroll-progress" ref={progressRef} aria-hidden="true"></div>
       <DotMatrix />
+      <DeveloperBadge />
 
       <Header
         menuOpen={menuOpen}
