@@ -4,6 +4,7 @@ import ararasAcaiImage from "../../assets/projects/araras acai.png";
 import financeTrackImage from "../../assets/projects/finance track.png";
 import smartlocationImage from "../../assets/projects/smartlocation.png";
 import elisandraImage from "../../assets/projects/site-elisandra.png";
+import medLembreImage from "../../assets/projects/medlembre.png";
 
 export const projects = [
   {
@@ -99,5 +100,16 @@ export const projects = [
     githubLink: "https://github.com/GiovanneMedeiros/finance-track",
     category: ["frontend", "backend"],
     inDevelopment: true,
+  },
+  {
+    title: "MedLembre",
+    description:
+      "Aplicação web instalável (PWA) de lembretes de medicamentos, com notificações push no horário certo, confirmação de doses, cadastro de familiares e contatos de emergência, relatórios semanais e planos de assinatura. Monorepo com front-end em React e API em NestJS.",
+    technologies: ["TypeScript", "React", "Vite", "Tailwind CSS", "NestJS", "Prisma", "PostgreSQL", "Supabase", "PWA"],
+    image: medLembreImage,
+    alt: "Página inicial do MedLembre com lembretes de medicamentos no celular",
+    demoLink: "https://www.medlembre.com.br/",
+    githubLink: "https://github.com/GiovanneMedeiros/MedLembre",
+    category: ["frontend", "backend", "api"],
   },
 ];
