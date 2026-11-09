@@ -95,7 +95,7 @@ export const projects = [
       "Aplicação web de controle financeiro pessoal com dashboard interativo, autenticação segura e sistema de planos FREE e PREMIUM para gerenciar receitas, despesas e acompanhar a saúde financeira.",
     technologies: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Supabase", "PostgreSQL", "HTML", "CSS"],
     image: financeTrackImage,
-    alt: "Dashboard do FinanceTrack com controle financeiro pessoal",
+    alt: "Página inicial do FinanceTrack com cartões de bancos e resumo de gastos do mês",
     demoLink: "https://finance-track-kappa.vercel.app/",
     githubLink: "https://github.com/GiovanneMedeiros/finance-track",
     category: ["frontend", "backend"],
