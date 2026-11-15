@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { createBadgeSim } from "./badgePhysics.js";
 import lanyardImage from "../../assets/badge/lanyard-clip.png";
 import cardImage from "../../assets/badge/badge-card.png";
@@ -287,7 +288,7 @@ export default function DeveloperBadge() {
     };
   }, []);
 
-  return (
+  return createPortal(
     <div className="dev-badge" ref={layerRef} aria-hidden="true">
       <svg className="dev-badge-strap" preserveAspectRatio="none">
         <defs>
@@ -333,6 +334,7 @@ export default function DeveloperBadge() {
           }}
         />
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
